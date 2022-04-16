@@ -1,16 +1,11 @@
 public class FireMonster extends Monster{
-    private String nameMonter;
-    public FireMonster(String name, String NameMonter){
+    public FireMonster(String name){
         super(name);
-        this.nameMonter=NameMonter;
     }
-    @Override
-    public String toString(){
-        return "Monter " +nameMonter;
-    }
+
 
     @Override
     public String attack(){
-        return "Attack with fire!";
+        return super.getName() +  " : Attack with fire!";
     }
 }
